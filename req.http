@@ -1,0 +1,55 @@
+GET http://localhost:4000/user-api/users
+
+###read user by  obj id
+GET http://localhost:4000/user-api/users/697dba75f72812cad668f432
+
+###create user
+POST http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username": "mithra",
+    "password": "shanmukh",    
+    "age": 19
+}
+
+### update use
+PUT http://localhost:4000/user-api/users/697dbe43611bcdd80744875d
+Content-Type: application/json
+
+{
+    "username": "shanmukh",
+    "password": "mithra",    
+    "age": 21       
+}
+
+### delete user
+DELETE http://localhost:4000/user-api/users/697dbe43611bcdd80744875d
+
+
+### product apis
+GET http://localhost:4000/product-api/products
+
+### read product by  obj id
+GET http://localhost:4000/product-api/products/697dd25546cdcbd4ccfbca55
+
+### create product
+POST http://localhost:4000/product-api/products
+Content-Type: application/json
+
+{
+    "pname": "laptop",
+    "price": 45000,    
+    "brand": "lenovo"
+}
+### update product
+PUT http://localhost:4000/product-api/products/697dd25546cdcbd4ccfbca55
+Content-Type: application/json
+
+{
+    "pname": "laptop",
+    "price": 40000,    
+    "brand": "hp"
+}
+### delete product
+DELETE http://localhost:4000/product-api/products/697dc0e7611bcdd80744875f
